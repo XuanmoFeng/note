@@ -14,3 +14,6 @@ if __name__ == '__main__':
     print("加权平均数是：%s" % ((da['data'] * da['count']).sum() / da['count'].sum()))
     # data['mul']=data['data'].cumprod().head(300)
     # print("几何平均数是：%s" %)
+    print("极差是：%s"%(data['data'].max()-data['data'].min()))
+    print("方差是：%s"%(data['data'].var()))
+    print("标准差：%s"%data['data'].std())
